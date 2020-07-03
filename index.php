@@ -212,7 +212,4 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
-    <br>
-    //uma frase
-    //mais uma frase
 </html>
