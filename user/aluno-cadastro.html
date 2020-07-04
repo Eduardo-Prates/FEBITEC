@@ -122,13 +122,8 @@
                 <h5 class="title">Editar Perfil</h5>
               </div>
               <div class="card-body">
-                <div id="fechar" class="alert alert-danger">
-                  <button type="button" aria-hidden="true" class="close" onclick="Fechar()">
-                    <i class="now-ui-icons ui-1_simple-remove"></i>
-                  </button>
-                  <span><b> Danger - </b> This is a regular notification made with ".alert-danger"</span>
-                </div>
               <div class="col-md-10 px-1">
+                   <form method="POST" action="../php/trabalhos/insere2.php">   
                       <br>
                       <label for="form_ava">Nível do trabalho:</label><br/>
                       <br>
@@ -147,17 +142,23 @@
                       <input  type="radio" onclick="Formulario2()"
                           id="form-nivel3" 
                           name="form-nivel"
+                          value="Médio-Técnico">
+                      <label for="form-nivel3">Médio-Técnico</label>
+                      <br>
+                      <input  type="radio" onclick="Formulario2()"
+                          id="form-nivel4" 
+                          name="form-nivel"
                           value="Técnico">
                       <label for="form-nivel3">Técnico</label>
                       <br>
                       <input  type="radio" onclick="Formulario2()"
-                          id="form-nivel4" 
+                          id="form-nivel5" 
                           name="form-nivel"
                           value="Graduação">
                       <label for="form-nivel4">Graduação</label>
                       <br>
                       <input  type="radio" onclick="Formulario2()"
-                          id="form-nivel5" 
+                          id="form-nivel6" 
                           name="form-nivel"
                           value="Pós-graduação">
                       <label for="form-nivel5">Pós-graduação</label>
