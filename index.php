@@ -41,11 +41,18 @@
                                 <a class="dropdown-item nav-link" href="index.html">2ª FEBITEC</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown">
                         <?php
                             if(isset($_SESSION['usuario'] )){
                         ?>      
-                            <p>Redirecionado</p>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">
+                                Login <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="dropdown_target">
+                                <a class="dropdown-item nav-link">Sair</a>
+                                <a class="dropdown-item nav-link" href="user/aluno-inicio.html">Área do usuário</a>
+                            </div>
                         <?php
                             }else{
                         ?>
