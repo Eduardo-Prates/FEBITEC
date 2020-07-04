@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -39,7 +42,17 @@
                             </div>
                         </li>
                         <li class="nav-item">
+                        <?php
+                            if(isset($_SESSION['usuario'] )){
+                        ?>      
+                            <p>Redirecionado</p>
+                        <?php
+                            }else{
+                        ?>
                             <a class="nav-link" href="login.html">Login <i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                        <?php
+                        }
+                        ?>          
                         </li>           
                     </ul>
                 </div>
